@@ -1,4 +1,5 @@
 # SQL-Aggregate-Function
+![alt text](image-6.png)
 It is time to transform a dataset into insights using SQL and visualize your findings using charts like a data analyst pro
 
 My main challenge was importing the raw csv dataset into mysql workbench 
