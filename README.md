@@ -9,6 +9,7 @@ I resolved it by doing data clleaning using https://app.datablist.com/d/anonymou
 I was able to import the dataset into the schema succesflly
 
 DATA FUN
+
 ``count number of users``
 `SELECT COUNT(UserID) AS TotalUsers`
 `FROM socialmedia.socialmediausers; `
