@@ -1,6 +1,11 @@
 # SQL-Aggregate-Function
 It is time to transform a dataset into insights using SQL and visualize your findings using charts like a data analyst pro
 
+My main challenge was importing the raw csv dataset into mysql workbench 
+The was encoding error due to the cvs file 
+I resolved it by doing data clleaning using https://app.datablist.com/d/anonymous/fcdb35bbc93846018a63
+I was able to import the dataset into the schema succesflly
+
 DATA FUN
 ``count number of users``
 `SELECT COUNT(UserID) AS TotalUsers`
