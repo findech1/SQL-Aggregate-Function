@@ -1,0 +1,36 @@
+` 1.Data Drive `
+Briefly explain any difficulties and 1 interesting thing you noticed about your chosen dataset.
+
+My main challenge was importing the raw csv dataset into mysql workbench 
+The was encoding error due to the cvs file 
+I resolved it by doing data clleaning using https://app.datablist.com/d/anonymous/fcdb35bbc93846018a63
+I was able to import the dataset into the schema succesflly
+
+2. Data Fun
+Count of users
+SELECT COUNT(UserID) AS TotalUsers
+FROM socialmedia.socialmediausers;
+
+Avarage age of user
+SELECT AVG(YEAR(CURDATE()) - YEAR(DOB)) AS AverageAge
+FROM socialmedia.socialmediausers;
+
+Sum of users by gender
+SELECT Gender, COUNT(UserID) AS TotalUsers
+FROM socialmedia.socialmediausers
+GROUP BY Gender;
+
+2 Ask Why
+Question 1: What are the most popular interests in each country?
+SELECT Country, Interests, COUNT(UserID) AS TotalUsers
+FROM socialmedia.socialmediausers
+GROUP BY Country, Interests
+ORDER BY Country, TotalUsers DESC;
+
+
+SELECT City, COUNT(UserID) AS TotalUsers
+FROM socialmedia.socialmediausers
+WHERE Interests = 'Photography'
+GROUP BY City
+ORDER BY TotalUsers DESC;
+
